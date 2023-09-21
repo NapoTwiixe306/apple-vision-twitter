@@ -1,0 +1,16 @@
+@import "../../Base/Mixins";
+.Navbar{
+  @include ForcedCenter();
+  position: absolute;
+  left: 31%;
+  .Navbar_content{
+    width: 76px;
+    height: 346px;
+    border-radius: 40px;
+    border: 2px solid red;
+    background-color: rgba(208, 208, 208, 0.25);
+    backdrop-filter: blur(50px);
+
+  }
+
+}

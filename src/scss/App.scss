@@ -7,8 +7,11 @@ body{
 }
 
 /*Base*/
-@import './Base/Reset';
-@import './Base/Mixins';
+@import 'Base/Reset';
+@import 'Base/Mixins';
+
+/*Widget*/
+@import "Views/Components/Navbar";
 
 /*Site*/
 @import 'Views/Home';

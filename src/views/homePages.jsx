@@ -1,12 +1,12 @@
 import React from 'react'
-//import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar";
 function HomePages() {
     return (
         <>
-            {/*<Navbar/>*/}
+            <Navbar/>
             <div className="firstRectangle">
                 <div className="firstRectangle_content">
-                    <h1>FirstRectangle <br/>(va y avoir le main, et le principal du projet figma)</h1>
+                    <h1>Rectangle Principal</h1>
                 </div>
             </div>
         </>

@@ -11,6 +11,22 @@ body {
   margin: 0;
   box-sizing: border-box; }
 
+/*Widget*/
+.Navbar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 31%; }
+  .Navbar .Navbar_content {
+    width: 76px;
+    height: 346px;
+    border-radius: 40px;
+    border: 2px solid red;
+    background-color: rgba(208, 208, 208, 0.25);
+    backdrop-filter: blur(50px); }
+
 /*Site*/
 .firstRectangle {
   display: flex;
@@ -24,11 +40,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 800px;
-    height: 850px;
-    border-radius: 25px;
-    border: 5px solid red;
+    width: 780px;
+    height: 840px;
+    border-radius: 40px;
+    border: 2px solid red;
     text-align: center;
-    background-color: rgba(211, 211, 211, 0.72); }
+    background-color: rgba(208, 208, 208, 0.25);
+    backdrop-filter: blur(50px); }
 
 /*# sourceMappingURL=style.css.map */
