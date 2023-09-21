@@ -1,0 +1,14 @@
+body{
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/*Base*/
+@import './Base/Reset';
+@import './Base/Mixins';
+
+/*Site*/
+@import 'Views/Home';
