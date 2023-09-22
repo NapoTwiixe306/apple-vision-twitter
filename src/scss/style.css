@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
@@ -47,5 +48,82 @@ body {
     text-align: center;
     background-color: rgba(208, 208, 208, 0.25);
     backdrop-filter: blur(50px); }
+    .firstRectangle .firstRectangle_content .header {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      position: absolute;
+      top: 18px;
+      width: 732px;
+      height: 200px; }
+      .firstRectangle .firstRectangle_content .header .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 728px;
+        height: 50px; }
+        .firstRectangle .firstRectangle_content .header .nav .largeScreen {
+          transform: rotate(90deg);
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          text-align: center;
+          background-color: rgba(187, 186, 186, 0.56);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 25px; }
+        .firstRectangle .firstRectangle_content .header .nav .twitterLogo {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background-color: dodgerblue;
+          color: white;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px; }
+        .firstRectangle .firstRectangle_content .header .nav .SearchContainer {
+          display: flex;
+          align-items: center;
+          /* Aligner l'icône verticalement au centre */
+          position: relative; }
+          .firstRectangle .firstRectangle_content .header .nav .SearchContainer .Search {
+            width: 390px;
+            height: 48px;
+            border-radius: 40px;
+            background-color: rgba(101, 99, 92, 0.6);
+            backdrop-filter: blur(50px);
+            padding-left: 48px;
+            border: 1px solid rgba(255, 255, 255, 0);
+            box-shadow: 0px 3px 4px 0px rgba(52, 50, 50, 0.35) inset;
+            font-size: 20px;
+            font-weight: 510;
+            line-height: 0;
+            letter-spacing: -0.2px; }
+            .firstRectangle .firstRectangle_content .header .nav .SearchContainer .Search::placeholder {
+              color: white; }
+          .firstRectangle .firstRectangle_content .header .nav .SearchContainer .SearchIcon {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            /* Ajuster la position de l'icône */
+            transform: translateY(-50%);
+            color: white; }
+        .firstRectangle .firstRectangle_content .header .nav .Settings {
+          width: 48px;
+          height: 48px;
+          border-radius: 40px;
+          background-color: rgba(187, 186, 186, 0.56);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 25px; }
+      .firstRectangle .firstRectangle_content .header .tweet {
+        width: 728px;
+        height: 150px;
+        border: 2px solid violet; }
 
 /*# sourceMappingURL=style.css.map */
