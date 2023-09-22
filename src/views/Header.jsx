@@ -11,6 +11,7 @@ import Emoji from '../img/Icons/Emoji.png'
 import Calendar from '../img/Icons/Calendar.png'
 import Send from '../img/Icons/Send.png'
 import Tweet from "./Tweet";
+import Presentation from "./Presentation";
 function Header() {
 
     return (
@@ -63,6 +64,7 @@ function Header() {
                         <div className="separator"></div>
 
                     </header>
+                    <Presentation/>
                     <Tweet/>
 
                 </div>
