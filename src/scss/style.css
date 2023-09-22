@@ -44,7 +44,6 @@ body {
     width: 780px;
     height: 840px;
     border-radius: 40px;
-    border: 2px solid red;
     text-align: center;
     background-color: rgba(208, 208, 208, 0.25);
     backdrop-filter: blur(50px); }
@@ -67,7 +66,8 @@ body {
           height: 48px;
           border-radius: 50%;
           text-align: center;
-          background-color: rgba(187, 186, 186, 0.56);
+          background-color: rgba(150, 150, 150, 0.56);
+          backdrop-filter: blur(50px);
           color: white;
           display: flex;
           align-items: center;
@@ -97,33 +97,38 @@ body {
             backdrop-filter: blur(50px);
             padding-left: 48px;
             border: 1px solid rgba(255, 255, 255, 0);
-            box-shadow: 0px 3px 4px 0px rgba(52, 50, 50, 0.35) inset;
+            box-shadow: 0 3px 4px 0 rgba(52, 50, 50, 0.35) inset;
             font-size: 20px;
             font-weight: 510;
             line-height: 0;
             letter-spacing: -0.2px; }
             .firstRectangle .firstRectangle_content .header .nav .SearchContainer .Search::placeholder {
               color: white; }
-          .firstRectangle .firstRectangle_content .header .nav .SearchContainer .SearchIcon {
-            position: absolute;
-            top: 50%;
-            left: 12px;
-            /* Ajuster la position de l'icône */
-            transform: translateY(-50%);
-            color: white; }
-        .firstRectangle .firstRectangle_content .header .nav .Settings {
-          width: 48px;
-          height: 48px;
-          border-radius: 40px;
-          background-color: rgba(187, 186, 186, 0.56);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          font-size: 25px; }
-      .firstRectangle .firstRectangle_content .header .tweet {
-        width: 728px;
-        height: 150px;
-        border: 2px solid violet; }
+            .firstRectangle .firstRectangle_content .header .nav .SearchContainer .Search:focus {
+              outline: none;
+              border: none;
+              color: white; }
+        .firstRectangle .firstRectangle_content .header .nav .SearchIcon {
+          position: absolute;
+          top: 50%;
+          left: 12px;
+          /* Ajuster la position de l'icône */
+          transform: translateY(-50%);
+          color: white; }
+      .firstRectangle .firstRectangle_content .header .Settings {
+        width: 48px;
+        height: 48px;
+        border-radius: 40px;
+        background-color: rgba(150, 150, 150, 0.56);
+        backdrop-filter: blur(50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 25px; }
+    .firstRectangle .firstRectangle_content .tweet {
+      width: 728px;
+      height: 150px;
+      border: 2px solid violet; }
 
 /*# sourceMappingURL=style.css.map */

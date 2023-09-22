@@ -1,10 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faMicrophone, faDownLeftAndUpRightToCenter, faCog} from '@fortawesome/free-solid-svg-icons';
+import {faMicrophone, faUpRightAndDownLeftFromCenter, faCog} from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Navbar from "../components/Navbar";
 
 function HomePages() {
+
     return (
         <>
             <Navbar/>
@@ -13,13 +14,17 @@ function HomePages() {
                     <header className="header">
                         <section className="nav">
                             <div className="largeScreen">
-                                <FontAwesomeIcon icon={faDownLeftAndUpRightToCenter} className="logo"/>
+                                <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className="logo"/>
                             </div>
                             <div className="twitterLogo">
                                 <FontAwesomeIcon icon={faTwitter} className="logo"/>
                             </div>
                             <div className="SearchContainer">
-                                <input type="search" placeholder="Search on Twitter" className="Search" />
+                                <input
+                                    type="search"
+                                    placeholder="Search on Twitter"
+                                    className="Search"
+                                />
                                 <FontAwesomeIcon icon={faMicrophone} size="1x" className="SearchIcon" />
                             </div>
                             <div className="Settings">
