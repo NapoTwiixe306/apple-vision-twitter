@@ -4,7 +4,14 @@ import {faMicrophone, faUpRightAndDownLeftFromCenter, faCog} from '@fortawesome/
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Navbar from "../components/Navbar";
 
-function HomePages() {
+import Images from '../img/Icons/image.png'
+import Videos from '../img/Icons/videos.png'
+import Menu from '../img/Icons/Menu$.png'
+import Emoji from '../img/Icons/Emoji.png'
+import Calendar from '../img/Icons/Calendar.png'
+import Send from '../img/Icons/Send.png'
+import Tweet from "./Tweet";
+function Header() {
 
     return (
         <>
@@ -32,13 +39,36 @@ function HomePages() {
                             </div>
                         </section>
                         <section className="tweet">
-                            Tweet
+                            <div className="Profile">
+                                {/*<FontAwesomeIcon icon={faTwitter} className="logo"/>*/}
+                            </div>
+                            <div className="input">
+                                <input
+                                    type="search"
+                                    placeholder="What is happening ?"
+                                    className="WhatHappening"
+                                />
+                                <FontAwesomeIcon icon={faMicrophone} size="1x" className="SearchIcon" />
+
+                            </div>
+                            <div className="icons">
+                                <img src={Images} alt=""/>
+                                <img src={Videos} alt=""/>
+                                <img src={Menu} alt=""/>
+                                <img src={Emoji} alt=""/>
+                                <img src={Calendar} alt=""/>
+                                <img src={Send} alt=""/>
+                            </div>
                         </section>
+                        <div className="separator"></div>
+
                     </header>
+                    <Tweet/>
+
                 </div>
             </div>
         </>
     );
 }
 
-export default HomePages;
+export default Header;
