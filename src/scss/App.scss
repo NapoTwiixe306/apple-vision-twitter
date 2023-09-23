@@ -6,6 +6,22 @@ body{
   background-attachment: fixed;
 }
 
+.copyright{
+  position: absolute;
+  bottom: 0;
+  font-family: C059;
+  h2{
+    color: #ffffff;
+  }
+  span{
+    color: #00ffa6;
+  }
+  a{
+    text-decoration: none;
+    color: #ebf5ff;
+  }
+}
+
 /*Base*/
 @import 'Base/Reset';
 @import 'Base/Mixins';
