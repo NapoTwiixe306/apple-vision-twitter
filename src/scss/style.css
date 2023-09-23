@@ -239,7 +239,7 @@ body {
       width: 736px;
       height: 150px;
       position: relative;
-      top: 100px; }
+      top: 120px; }
       .firstRectangle .Tweet .PostsOne .InfosPoster {
         display: flex;
         gap: 15px; }
@@ -326,14 +326,14 @@ body {
         width: 20px; }
     .firstRectangle .Tweet .separator1 {
       position: absolute;
-      top: 270px;
+      top: 290px;
       width: 732px;
       height: 2px;
       border-radius: 2px;
       background-color: rgba(186, 186, 186, 0.52); }
     .firstRectangle .Tweet .separator2 {
       position: absolute;
-      top: 600px;
+      top: 620px;
       width: 732px;
       height: 2px;
       border-radius: 2px;
@@ -342,7 +342,7 @@ body {
       width: 736px;
       height: 310px;
       position: relative;
-      top: 130px; }
+      top: 150px; }
       .firstRectangle .Tweet .PostsTwo .InfosPoster {
         display: flex;
         gap: 15px; }
@@ -409,50 +409,53 @@ body {
         gap: 25px;
         height: 20px;
         width: 20px; }
-    .firstRectangle .Tweet .ThirdPosts .InfosPoster {
-      display: flex;
-      gap: 15px; }
-      .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster {
-        position: relative;
-        top: 155px;
-        font-family: sans-serif; }
-        .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .strong {
-          font-size: 17px;
-          font-weight: bolder;
-          color: white; }
-          .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .strong .Certi {
-            position: relative;
-            top: 8px;
-            left: 5px;
-            width: 25px;
-            height: 25px; }
-        .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .Point {
-          color: white;
-          position: absolute;
-          right: -515px;
-          top: -22px;
-          font-size: 55px; }
-          .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .Point button {
-            background-color: transparent;
-            border: none;
-            cursor: pointer; }
-        .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .infos {
-          position: relative;
-          left: 15px;
-          color: #7f7f7f; }
-      .firstRectangle .Tweet .ThirdPosts .InfosPoster .Images {
-        position: relative;
-        top: 150px;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background-image: url("../../img/Elon.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
+    .firstRectangle .Tweet .ThirdPosts {
+      position: relative;
+      top: 15px; }
+      .firstRectangle .Tweet .ThirdPosts .InfosPoster {
         display: flex;
-        align-items: center;
-        justify-content: center; }
+        gap: 15px; }
+        .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster {
+          position: relative;
+          top: 155px;
+          font-family: sans-serif; }
+          .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .strong {
+            font-size: 17px;
+            font-weight: bolder;
+            color: white; }
+            .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .strong .Certi {
+              position: relative;
+              top: 8px;
+              left: 5px;
+              width: 25px;
+              height: 25px; }
+          .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .Point {
+            color: white;
+            position: absolute;
+            right: -445px;
+            top: -22px;
+            font-size: 55px; }
+            .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .Point button {
+              background-color: transparent;
+              border: none;
+              cursor: pointer; }
+          .firstRectangle .Tweet .ThirdPosts .InfosPoster .Poster .infos {
+            position: relative;
+            left: 15px;
+            color: #7f7f7f; }
+        .firstRectangle .Tweet .ThirdPosts .InfosPoster .Images {
+          position: relative;
+          top: 150px;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background-image: url("../../img/Elon.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */

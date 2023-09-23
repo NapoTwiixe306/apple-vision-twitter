@@ -9,7 +9,7 @@
     width: 736px;
     height: 150px;
     position: relative;
-    top: 100px;
+    top: 120px;
     .InfosPoster{
       display: flex;
       gap: 15px;
@@ -111,7 +111,7 @@
   }
   .separator1{
     position: absolute;
-    top: 270px;
+    top: 290px;
     width: 732px;
     height: 2px;
     border-radius: 2px;
@@ -119,7 +119,7 @@
   }
   .separator2{
     position: absolute;
-    top: 600px;
+    top: 620px;
     width: 732px;
     height: 2px;
     border-radius: 2px;
@@ -129,7 +129,7 @@
     width: 736px;
     height: 310px;
     position: relative;
-    top: 130px;
+    top: 150px;
     .InfosPoster{
       display: flex;
       gap: 15px;
@@ -212,6 +212,8 @@
     }
   }
   .ThirdPosts{
+    position: relative;
+    top: 15px;
     .InfosPoster{
       display: flex;
       gap: 15px;
@@ -234,7 +236,7 @@
         .Point{
           color: white;
           position: absolute;
-          right: -515px;
+          right: -445px;
           top: -22px;
           font-size: 55px;
           button{
