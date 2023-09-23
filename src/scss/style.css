@@ -232,14 +232,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
-    top: 380px;
-    width: 736px;
-    height: 150px;
     display: flex;
-    border: 2px solid red; }
+    flex-direction: column; }
     .firstRectangle .Tweet .PostsOne {
-      font-family: sans-serif; }
+      font-family: sans-serif;
+      width: 736px;
+      height: 150px;
+      position: relative;
+      top: 15px; }
       .firstRectangle .Tweet .PostsOne .InfosPoster {
         display: flex;
         gap: 15px; }
@@ -286,5 +286,39 @@ body {
           width: 90%;
           color: white;
           left: 45px; }
+      .firstRectangle .Tweet .PostsOne .ResponsePoster .Images {
+        position: relative;
+        top: 20px;
+        left: 8px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../img/TwitterPoster.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .firstRectangle .Tweet .PostsOne .ResponsePoster .text {
+        position: relative;
+        left: -260px;
+        top: -5px;
+        color: white;
+        text-decoration: underline; }
+      .firstRectangle .Tweet .PostsOne .icons {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        gap: 25px;
+        height: 15px;
+        width: 15px; }
+    .firstRectangle .Tweet .PostsTwo {
+      width: 736px;
+      height: 150px;
+      border: 2px solid red;
+      position: relative;
+      top: 80px; }
 
 /*# sourceMappingURL=style.css.map */

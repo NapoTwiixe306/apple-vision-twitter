@@ -1,5 +1,9 @@
 import React from 'react'
 import Certified from '../img/Certified.png'
+import Comment from '../img/Response/Comment.png'
+import ReTweet from '../img/Response/ReTweet.png'
+import Like from '../img/Response/Like.png'
+import Views from '../img/Response/Views.png'
 function Tweet() {
     return (
         <>
@@ -26,8 +30,23 @@ function Tweet() {
                             </p>
                         </div>
                     </div>
+                    <div className="ResponsePoster">
+                        <div className="Images"></div>
+                        <div className="text">
+                            <p>Show this Thread</p>
+                        </div>
+                    </div>
+                    <div className="icons">
+                        <img src={Comment} alt=""/>
+                        <img src={ReTweet} alt=""/>
+                        <img src={Like} alt=""/>
+                        <img src={Views} alt=""/>
+                    </div>
                 </div>
-                <div className="PostsTwo"></div>
+                <div className="separator"></div>
+                <div className="PostsTwo">
+
+                </div>
             </div>
 
         </>

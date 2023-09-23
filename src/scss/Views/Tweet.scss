@@ -2,14 +2,14 @@
 @import "../Base/Mixins";
 .Tweet{
   @include ForcedCenter();
-  position: absolute;
-  top: 380px;
-  width: 736px;
-  height: 150px;
   display: flex;
-  border: 2px solid red;
+  flex-direction: column;
   .PostsOne{
     font-family: sans-serif;
+    width: 736px;
+    height: 150px;
+    position: relative;
+    top: 15px;
     .InfosPoster{
       display: flex;
       gap: 15px;
@@ -64,6 +64,45 @@
         left: 45px;
       }
     }
+    .ResponsePoster{
+      .Images{
+        position: relative;
+        top: 20px;
+        left: 8px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../img/TwitterPoster.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        @include Center();
+      }
+      .text{
+        position: relative;
+        left: -260px;
+        top: -5px;
+        color: white;
+        text-decoration: underline;
+      }
+    }
+    .icons{
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      gap: 25px;
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  .PostsTwo{
+    width: 736px;
+    height: 150px;
+    border: 2px solid red;
+    position: relative;
+    top: 80px;
   }
 
 }
