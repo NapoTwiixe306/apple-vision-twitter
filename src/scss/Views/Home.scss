@@ -11,6 +11,7 @@
     height: 840px;
     border-radius: 40px;
     //border: 2px solid red;
+    transition: all 1s ease;
     text-align: center;
     background-color: $backgroundRectangle;
     backdrop-filter: blur(50px);
@@ -56,6 +57,7 @@
           align-items: center;
           font-size: 25px;
         }
+
         .SearchContainer {
           display: flex;
           align-items: center; /* Aligner l'icône verticalement au centre */
@@ -89,89 +91,6 @@
         }
 
 
-          .SearchIcon {
-            position: absolute;
-            top: 50%;
-            left: 12px; /* Ajuster la position de l'icône */
-            transform: translateY(-50%);
-            color: white;
-          }
-        }
-        .Settings{
-          width: 48px;
-          height: 48px;
-          border-radius: 40px;
-          background-color: rgba(150, 150, 150, 0.56);
-          backdrop-filter: blur(50px);
-
-          @include Center();
-          color: white;
-          font-size: 25px;
-
-        }
-      }
-
-      .tweet {
-        display: flex;
-        justify-content: space-between;
-        width: 728px;
-        height: 100px;
-        position: relative;
-        top: 18px;
-        //border: 2px solid violet;
-
-        .Profile{
-          position: relative;
-          left: 5px;
-          top: -18px;
-          margin: 18px;
-          width: 48px;
-          height: 48px;
-          border-radius: 40px;
-          background-color: rgba(150, 150, 150, 0.56);
-          backdrop-filter: blur(50px);
-          @include Center();
-          color: white;
-          font-size: 25px;
-          background-image: url("../../img/julien.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-          background-attachment: fixed;
-        }
-
-        .input {
-          display: flex;
-          align-items: center; /* Aligner l'icône verticalement au centre */
-          position: relative;
-          top: -25px;
-          left: -20px;
-          .WhatHappening {
-            width: 616px;
-            height: 48px;
-            border-radius: 16px;
-            background-color: rgba(101, 99, 92, 0.60);
-            backdrop-filter: blur(50px);
-            padding-left: 48px;
-            border: 1px solid rgba(255, 255, 255, 0.00);
-            box-shadow: 0 3px 4px 0 rgba(52, 50, 50, 0.35) inset;
-
-            font-size: 20px;
-            font-weight: 510;
-            line-height: 0;
-            letter-spacing: -0.2px;
-
-            &::placeholder {
-              color: white;
-            }
-
-            &:focus {
-              outline: none;
-              border: none;
-              color: white;
-            }
-          }
-        }
         .SearchIcon {
           position: absolute;
           top: 50%;
@@ -179,26 +98,116 @@
           transform: translateY(-50%);
           color: white;
         }
-        .icons{
-          display: flex;
-          position: absolute;
-          bottom: 10px;
-          left: 100px;
-          gap: 25px;
-          height: 28px;
-          width: 28px;
-        }
+      }
+
+      .Settings {
+        width: 48px;
+        height: 48px;
+        border-radius: 40px;
+        background-color: rgba(150, 150, 150, 0.56);
+        backdrop-filter: blur(50px);
+
+        @include Center();
+        color: white;
+        font-size: 25px;
+
       }
     }
-    .separator{
-      position: absolute;
-      top: 190px;
-      width: 732px;
-      height: 2px;
-      border-radius: 2px;
-      background-color: rgba(186, 186, 186, 0.52);
-    }
-  @import "./Presentation";
 
-  @import "./Tweet";
+    .tweet {
+      display: flex;
+      justify-content: space-between;
+      width: 728px;
+      height: 100px;
+      position: relative;
+      top: 18px;
+      //border: 2px solid violet;
+
+      .Profile {
+        position: relative;
+        left: 5px;
+        top: -18px;
+        margin: 18px;
+        width: 48px;
+        height: 48px;
+        border-radius: 40px;
+        background-color: rgba(150, 150, 150, 0.56);
+        backdrop-filter: blur(50px);
+        @include Center();
+        color: white;
+        font-size: 25px;
+        background-image: url("../../img/julien.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+
+      .input {
+        display: flex;
+        align-items: center; /* Aligner l'icône verticalement au centre */
+        position: relative;
+        top: -25px;
+        left: -20px;
+
+        .WhatHappening {
+          width: 616px;
+          height: 48px;
+          border-radius: 16px;
+          background-color: rgba(101, 99, 92, 0.60);
+          backdrop-filter: blur(50px);
+          padding-left: 48px;
+          border: 1px solid rgba(255, 255, 255, 0.00);
+          box-shadow: 0 3px 4px 0 rgba(52, 50, 50, 0.35) inset;
+
+          font-size: 20px;
+          font-weight: 510;
+          line-height: 0;
+          letter-spacing: -0.2px;
+
+          &::placeholder {
+            color: white;
+          }
+
+          &:focus {
+            outline: none;
+            border: none;
+            color: white;
+          }
+        }
+      }
+
+      .SearchIcon {
+        position: absolute;
+        top: 50%;
+        left: 12px; /* Ajuster la position de l'icône */
+        transform: translateY(-50%);
+        color: white;
+      }
+
+      .icons {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        left: 100px;
+        gap: 25px;
+        height: 28px;
+        width: 28px;
+      }
+    }
   }
+
+  .separator {
+    position: absolute;
+    top: 190px;
+    width: 732px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgba(186, 186, 186, 0.52);
+  }
+
+  @import "./Presentation";
+  @import "./Tweet";
+}
+
+

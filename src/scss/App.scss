@@ -12,6 +12,8 @@ body{
 
 /*Widget*/
 @import "Views/Components/Navbar";
+@import 'Views/Components/Profile';
+@import 'Views/Components/Suggestions';
 
 /*Site*/
 @import 'Views/Home';

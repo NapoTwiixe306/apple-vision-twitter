@@ -1,0 +1,13 @@
+@import '../../Base/Variables';
+.Suggestion{
+  float: right;
+  position: relative;
+  top: 230px;
+  left: -400px;
+  width: 390px;
+  border: 3px solid red;
+  height: 840px;
+  border-radius: 40px;
+  background-color: $backgroundRectangle;
+  backdrop-filter: blur(50px);
+}

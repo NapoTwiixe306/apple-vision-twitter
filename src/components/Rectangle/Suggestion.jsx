@@ -2,7 +2,7 @@ import React from 'react'
 function Suggestion() {
     return (
         <>
-            <div>
+            <div className="Suggestion">
                 <h1>Suggestion</h1>
             </div>
         </>
