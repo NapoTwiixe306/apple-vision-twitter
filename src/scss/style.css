@@ -325,6 +325,13 @@ body {
         margin-top: 40px; }
 
 /*Site*/
+@keyframes openAnimation {
+  0% {
+    opacity: 0;
+    transform: scaleY(0); }
+  100% {
+    opacity: 1;
+    transform: scaleY(1); } }
 .firstRectangle {
   display: flex;
   align-items: center;
@@ -344,6 +351,13 @@ body {
     text-align: center;
     background-color: rgba(208, 208, 208, 0.25);
     backdrop-filter: blur(50px); }
+    .firstRectangle .firstRectangle_content .components-container {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s ease; }
+    .firstRectangle .firstRectangle_content .open-components {
+      max-height: 1000px;
+      animation: openAnimation 1s ease forwards; }
     .firstRectangle .firstRectangle_content .header {
       display: flex;
       flex-direction: column;

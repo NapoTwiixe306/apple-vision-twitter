@@ -1,5 +1,15 @@
 @import '../Base/Mixins';
 @import '../Base/Variables';
+@keyframes openAnimation {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
 
 .firstRectangle {
   @include Center();
@@ -15,6 +25,18 @@
     text-align: center;
     background-color: $backgroundRectangle;
     backdrop-filter: blur(50px);
+    .components-container {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s ease; // Ajoutez une transition pour une ouverture fluide
+    }
+
+    .open-components {
+      max-height: 1000px; // ou toute autre valeur appropriée
+      animation: openAnimation 1s ease forwards; // Appliquer l'animation aux composants
+    }
+
+    // Autres styles pour les composants
 
     .header {
       display: flex;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone, faUpRightAndDownLeftFromCenter, faDownLeftAndUpRightToCenter, faCog } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -13,8 +13,11 @@ import Presentation from "./Presentation";
 import Suggestion from '../components/Rectangle/Suggestion';
 import Profile from '../components/Rectangle/Profile';
 import Navbar from "../components/Navbar";
+
+
 function Header() {
     const [showComponents, setShowComponents] = useState(false);
+    const firstRectangleRef = useRef(null);
 
     const toggleComponents = () => {
         setShowComponents(!showComponents);
@@ -27,7 +30,7 @@ function Header() {
     return (
         <>
             {shouldShowNavbar && <Navbar />}
-            <div className={`firstRectangle${showComponents ? ' open' : ''}`}>
+            <div ref={firstRectangleRef} className={`firstRectangle${showComponents ? ' open' : ''}`}>
                 <div className="firstRectangle_content">
                     <header className="header">
                         <section className="nav">
