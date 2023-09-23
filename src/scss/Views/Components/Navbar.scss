@@ -1,16 +1,43 @@
-@import "../../Base/Mixins";
-.Navbar{
+.Navbar {
   @include ForcedCenter();
   position: absolute;
+  z-index: 99;
   left: 31%;
-  .Navbar_content{
+
+  .Navbar_content {
     width: 76px;
-    height: 346px;
+    height: 380px;
     border-radius: 40px;
-    border: 2px solid red;
     background-color: rgba(208, 208, 208, 0.25);
     backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
 
+    &:hover {
+      transition: 0.5s;
+      width: 200px;
+      p {
+        font-size: 20px;
+
+        color: white;
+        position: relative;
+        top: -20px;
+        left: 10px;
+      }
+    }
+
+    img {
+      width: 55px;
+      height: 55px;
+
+    }
+
+    p {
+      opacity: 0;
+      display: none;
+    }
   }
-
 }
