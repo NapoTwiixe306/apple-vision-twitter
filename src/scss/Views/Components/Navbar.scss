@@ -1,7 +1,7 @@
 .Navbar {
   @include ForcedCenter();
   position: absolute;
-  z-index: 99;
+  z-index: 9999;
   left: 31%;
 
   .Navbar_content {
@@ -14,30 +14,31 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: 0.5s;
 
     &:hover {
-      transition: 0.5s;
       width: 200px;
-      p {
-        font-size: 20px;
-
-        color: white;
+      img{
         position: relative;
-        top: -20px;
-        left: 10px;
+        left: -30px;
+      }
+      p{
+        display: initial;
       }
     }
 
     img {
       width: 55px;
       height: 55px;
-
     }
 
     p {
-      opacity: 0;
+      position: relative;
+      top: -25px;
+      left: 5px;
+      font-size: 20px;
+      color: white;
       display: none;
     }
   }
+
 }

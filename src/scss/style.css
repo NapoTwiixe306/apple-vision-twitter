@@ -31,7 +31,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 99;
+  z-index: 9999;
   left: 31%; }
   .Navbar .Navbar_content {
     width: 76px;
@@ -42,22 +42,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    transition: 0.5s; }
+    flex-direction: column; }
     .Navbar .Navbar_content:hover {
-      transition: 0.5s;
       width: 200px; }
-      .Navbar .Navbar_content:hover p {
-        font-size: 20px;
-        color: white;
+      .Navbar .Navbar_content:hover img {
         position: relative;
-        top: -20px;
-        left: 10px; }
+        left: -30px; }
+      .Navbar .Navbar_content:hover p {
+        display: initial; }
     .Navbar .Navbar_content img {
       width: 55px;
       height: 55px; }
     .Navbar .Navbar_content p {
-      opacity: 0;
+      position: relative;
+      top: -25px;
+      left: 5px;
+      font-size: 20px;
+      color: white;
       display: none; }
 
 .profile {

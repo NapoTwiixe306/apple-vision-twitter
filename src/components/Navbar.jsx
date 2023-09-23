@@ -18,23 +18,23 @@ function Navbar() {
                     </div>
                     <div className="Search">
                         <img src={Search} alt=""/>
-                        <p>Search</p>
+                        <p>Home</p>
                     </div>
                     <div className="Bell">
                         <img src={Bell} alt=""/>
-                        <p>Bell</p>
+                        <p>Home</p>
                     </div>
                     <div className="Message">
                         <img src={Messages} alt=""/>
-                        <p>Message</p>
+                        <p>Home</p>
                     </div>
                     <div className="Favorites">
                         <img src={Favorites} alt=""/>
-                        <p>Favorites</p>
+                        <p>Home</p>
                     </div>
                     <div className="Settings">
                         <img src={Settings} alt=""/>
-                        <p>Settings</p>
+                        <p>Home</p>
                     </div>
                 </div>
             </div>
