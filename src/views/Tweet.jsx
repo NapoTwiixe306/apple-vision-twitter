@@ -68,7 +68,6 @@ function Tweet() {
                                 </button>
                             </span>
                         </div>
-                        <div className="sepa"></div>
                     </div>
                     <div className="TextPoster">
                         <div className="text">
@@ -89,7 +88,25 @@ function Tweet() {
                     </div>
                 </div>
                 <div className="separator2"></div>
-
+                <div className="ThirdPosts">
+                    <div className="InfosPoster">
+                        <div className="Images"></div>
+                        <div className="Poster">
+                            <span className="strong">
+                                Elon Musk
+                                 <img src={Certified} alt="" className="Certi"/>
+                            </span>
+                            <span className="infos">
+                                @elonmusk •  7h
+                            </span>
+                            <span className="Point">
+                                <button>
+                                    <img src={Point} alt=""/>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </>
